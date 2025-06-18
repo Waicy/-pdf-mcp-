@@ -1,0 +1,23 @@
+[project]
+name = "pdf-mcp"
+version = "0.1.0"
+description = "A PDF MCP server."
+dependencies = [
+    "fastmcp==2.8.1",
+    "pdfplumber==0.11.7",
+    "PyPDF2==3.0.1",
+]
+requires-python = ">=3.12"
+
+[project.scripts]
+pdf-mcp = "src.pdf_mcp_server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+include = [
+  "src/",
+] 
+
