@@ -15,11 +15,11 @@
 ### 方法一：使用 uv（推荐）
 ```bash
 # 克隆项目
-git clone https://github.com/yourusername/pdf-mcp.git
+git clone https://github.com/Waicy/-pdf-mcp-.git
 cd pdf-mcp
 
 # 创建虚拟环境并安装依赖
-uv sync --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+uv sync
 ```
 
 ### 方法二：使用 pip
@@ -54,10 +54,10 @@ python src/pdf_mcp_server.py
       "command": "uv",
       "args": [
          "--directory",
-         "path/to/your/pdf-mcp"
+         "path/to/your/pdf-mcp",
          "run",
          "pdf-mcp"
-      ],
+      ]
     }
   }
 }
